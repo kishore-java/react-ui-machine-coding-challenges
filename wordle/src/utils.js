@@ -21,12 +21,14 @@ export function evaluateGuess(currentGuess , word ){
 
          if(letterCountOfWord[letter] > 0) {
             result[i] = {letter , status:'present'};
+            letterCountOfWord[letter]--;
          }
 
          else result[i] = {letter , status:'absent'}
 
   })
-
+ 
+    console.log(`result for guess ${currentGuess} is ` , result);
   return result;
 
 
