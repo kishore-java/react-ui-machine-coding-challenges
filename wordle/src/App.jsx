@@ -72,7 +72,7 @@ useEffect(() => {
       <h1 className="text-3xl font-bold tracking-widest text-center mb-6">
        WORDGUESS
        </h1>
-        <StatusMessage message = {gameStatus}/>
+        <StatusMessage message = {gameStatus} answer={word}/>
        <Grid guesses={guesses} currentWord={currentWord} word={word} />
        <Keyboard onKey={handleKey} guesses={guesses} answer={word}/>
       
